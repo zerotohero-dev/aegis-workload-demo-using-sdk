@@ -28,18 +28,6 @@ spec:
         - name: main
           image: z2hdev/aegis-workload-demo-using-sdk:0.7.0
           volumeMounts:
-          # `main` shares this volume with `sidecar`.
-          - mountPath: /opt/aegis
-            name: aegis-secrets-volume
-        - name: sidecar
-          image: z2hdev/aegis-sidecar:0.7.0
-          volumeMounts:
-          # /opt/aegis/secrets.json is the place the secrets will be at.
-          # As of now, this is not configurable. Once the MVP is complete,
-          # we’ll work on making Aegis more flexible and add more configuration
-          # options.
-          - mountPath: /opt/aegis
-            name: aegis-secrets-volume
           # Volume mount for SPIRE unix domain socket.
           - name: spire-agent-socket
             mountPath: /spire-agent-socket
@@ -50,11 +38,6 @@ spec:
           - name: SPIFFE_ENDPOINT_SOCKET
             value: unix:///spire-agent-socket/agent.sock
       volumes:
-      # A memory-backed volume is recommended (but not required) to keep
-      # the secrets. The secrets can be stored in any kind of volume.
-      - name: aegis-secrets-volume
-        emptyDir:
-          medium: Memory
       # SPIRE needs this.
       - name: spire-agent-socket
         hostPath:
