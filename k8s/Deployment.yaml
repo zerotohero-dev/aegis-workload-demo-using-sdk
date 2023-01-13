@@ -38,6 +38,7 @@ spec:
           - name: SPIFFE_ENDPOINT_SOCKET
             value: unix:///spire-agent-socket/agent.sock
       volumes:
+      # We need this to talk to the SPIRE Agent.
       - name: spire-agent-socket
         csi:
           driver: "csi.spiffe.io"
