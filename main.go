@@ -11,17 +11,19 @@ package main
 import (
 	"fmt"
 	"github.com/zerotohero-dev/aegis-sdk-go/sentry"
+	"log"
 	"time"
 )
 
 func main() {
 	for {
-		data, err := sentry.Fetch()
+		log.Println("fetch")
+		d, err := sentry.Fetch()
 
 		if err != nil {
 			fmt.Println("Failed to read the secrets file. Will retry in 5 seconds…")
 		} else {
-			fmt.Println("secret: '", data, "'")
+			fmt.Println("secret: '", d, "'")
 		}
 
 		time.Sleep(5 * time.Second)

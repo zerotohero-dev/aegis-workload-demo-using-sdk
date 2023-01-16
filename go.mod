@@ -2,7 +2,7 @@ module aegis-workload-demo
 
 go 1.19
 
-require github.com/zerotohero-dev/aegis-sdk-go v0.5.1
+require github.com/zerotohero-dev/aegis-sdk-go v0.8.2
 
 require (
 	github.com/Microsoft/go-winio v0.6.0 // indirect
@@ -10,7 +10,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/spiffe/go-spiffe/v2 v2.1.2 // indirect
 	github.com/zeebo/errs v1.3.0 // indirect
-	github.com/zerotohero-dev/aegis-core v0.5.3 // indirect
+	github.com/zerotohero-dev/aegis-core v0.8.3 // indirect
 	golang.org/x/crypto v0.5.0 // indirect
 	golang.org/x/mod v0.7.0 // indirect
 	golang.org/x/net v0.5.0 // indirect
