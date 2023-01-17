@@ -13,7 +13,6 @@ RUN mkdir /build
 ADD *.go /build/
 ADD go.mod /build/
 COPY vendor /build/vendor
-COPY sentry /build/sentry
 WORKDIR /build
 RUN CGO_ENABLED=0 GOOS=linux go build -mod vendor -a -o aegis-workload-demo ./main.go
 
