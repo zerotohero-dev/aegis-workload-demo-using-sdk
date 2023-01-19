@@ -22,11 +22,12 @@ func main() {
 
 		if err != nil {
 			fmt.Println("Failed to read the secrets file. Will retry in 5 seconds…")
+			fmt.Println(err.Error())
 			time.Sleep(5 * time.Second)
 			continue
 		}
 
-		if d.Value == "" {
+		if d.Data == "" {
 			fmt.Println("no secret yet… will check again later.")
 			time.Sleep(5 * time.Second)
 			continue
@@ -34,7 +35,7 @@ func main() {
 
 		fmt.Printf(
 			"secret: updated: %s, created: %s, value: %s\n",
-			d.Updated, d.Created, d.Value,
+			d.Updated, d.Created, d.Data,
 		)
 		time.Sleep(5 * time.Second)
 	}
