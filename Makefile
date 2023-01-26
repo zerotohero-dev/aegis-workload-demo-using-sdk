@@ -6,7 +6,7 @@
 #     .\_/.
 #
 
-VERSION=0.9.34
+VERSION=0.9.35
 PACKAGE=aegis-workload-demo-using-sdk
 REPO=z2hdev/aegis-workload-demo-using-sdk
 
