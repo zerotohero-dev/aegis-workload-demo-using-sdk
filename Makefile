@@ -9,7 +9,7 @@
 VERSION=0.11.0
 PACKAGE=aegis-workload-demo-using-sdk
 REPO=z2hdev/aegis-workload-demo-using-sdk
-REPO_LOCAL="$(minikube ip):5000/aegis-workload-demo-using-sdk"
+REPO_LOCAL="$(shell minikube ip):5000/aegis-workload-demo-using-sdk"
 
 all: build bundle push deploy
 
