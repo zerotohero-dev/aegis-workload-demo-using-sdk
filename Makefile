@@ -9,8 +9,11 @@
 VERSION=0.11.0
 PACKAGE=aegis-workload-demo-using-sdk
 REPO=z2hdev/aegis-workload-demo-using-sdk
+REPO_LOCAL="$(minikube ip):5000/aegis-workload-demo-using-sdk"
 
 all: build bundle push deploy
+
+all-local: build bundle push-local deploy-local
 
 build:
 	go build -o ${PACKAGE}
@@ -30,6 +33,16 @@ push:
 deploy:
 	kubectl apply -f ./k8s/ServiceAccount.yaml
 	kubectl apply -f ./k8s/Deployment.yaml
+	kubectl apply -f ./k8s/Identity.yaml
+
+push-local:
+	docker build . -t ${PACKAGE}:${VERSION}
+	docker tag ${PACKAGE}:${VERSION} ${REPO_LOCAL}:${VERSION}
+	docker push ${REPO_LOCAL}:${VERSION}
+
+deploy-local:
+	kubectl apply -f ./k8s/ServiceAccount.yaml
+	kubectl apply -k ./k8s
 	kubectl apply -f ./k8s/Identity.yaml
 
 run-in-container:
