@@ -6,10 +6,10 @@
 #     .\_/.
 #
 
-VERSION=0.11.0
+VERSION=0.11.3
 PACKAGE=aegis-workload-demo-using-sdk
 REPO=z2hdev/aegis-workload-demo-using-sdk
-REPO_LOCAL="$(shell minikube ip):5000/aegis-workload-demo-using-sdk"
+REPO_LOCAL="localhost:5000/aegis-workload-demo-using-sdk"
 
 all: build bundle push deploy
 
