@@ -1,6 +1,6 @@
 module aegis-workload-demo
 
-go 1.19
+go 1.20
 
 require github.com/zerotohero-dev/aegis-sdk-go v0.11.5
 
