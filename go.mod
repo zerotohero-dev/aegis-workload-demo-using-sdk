@@ -2,7 +2,7 @@ module aegis-workload-demo
 
 go 1.20
 
-require github.com/zerotohero-dev/aegis-sdk-go v0.11.21
+require github.com/zerotohero-dev/aegis-sdk-go v0.11.22
 
 require (
 	github.com/Microsoft/go-winio v0.6.0 // indirect
