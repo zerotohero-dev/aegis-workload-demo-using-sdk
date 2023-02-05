@@ -14,10 +14,10 @@ github.com/spiffe/go-spiffe/v2 v2.1.2/go.mod h1:cbQmFrxsOpbm5tWURAYip9ZK0dOSFeoF
 github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKsk=
 github.com/zeebo/errs v1.3.0 h1:hmiaKqgYZzcVgRL1Vkc1Mn2914BbzB0IBxs+ebeutGs=
 github.com/zeebo/errs v1.3.0/go.mod h1:sgbWHsvVuTPHcqJJGQ1WhI5KbWlHYz+2+2C/LSEtCw4=
-github.com/zerotohero-dev/aegis-core v0.11.1 h1:smR33AbwW5hcAu2GOMR9CBO7+c2OvPPa0Rhb/lypito=
-github.com/zerotohero-dev/aegis-core v0.11.1/go.mod h1:0zhADICaMfHfd3FZViDQ8EOpNmloRR0EzsdjqyLfK8s=
-github.com/zerotohero-dev/aegis-sdk-go v0.11.5 h1:9q+TNFwRA3y0fXmPI9+uyACbpZpTViFjyZg8onoQEj4=
-github.com/zerotohero-dev/aegis-sdk-go v0.11.5/go.mod h1:RwaHgQCBWoHRDujRYFasO/4z7DuCj8BlhuengS7Oem8=
+github.com/zerotohero-dev/aegis-core v0.11.7 h1:VMx51NoL28l3aRVHxil7kJ+UiqI9eLPCtl/Yo41YZ40=
+github.com/zerotohero-dev/aegis-core v0.11.7/go.mod h1:0zhADICaMfHfd3FZViDQ8EOpNmloRR0EzsdjqyLfK8s=
+github.com/zerotohero-dev/aegis-sdk-go v0.11.20 h1:uZH/7P3ARN6YRWdhtlGRsuDvN8ij1ZxnPr5Mks7O9E8=
+github.com/zerotohero-dev/aegis-sdk-go v0.11.20/go.mod h1:z7rSkOF+bX2PnMTpR76+ln/zAuQzBXOD7+cTCbE6NYY=
 golang.org/x/crypto v0.5.0 h1:U/0M97KRkSFvyD/3FSmdP5W5swImpNgle/EHFhOsQPE=
 golang.org/x/crypto v0.5.0/go.mod h1:NK/OQwhpMQP3MwtdjgLlYHnH9ebylxKWv3e0fK+mkQU=
 golang.org/x/mod v0.7.0 h1:LapD9S96VoQRhi/GrNTqeBJFrUjs5UHCAtTlgwA5oZA=
