@@ -6,7 +6,7 @@
 #     .\_/.
 #
 
-VERSION=0.12.30
+VERSION=0.12.50
 PACKAGE=aegis-workload-demo-using-sdk
 REPO=z2hdev/aegis-workload-demo-using-sdk
 REPO_LOCAL="localhost:5000/aegis-workload-demo-using-sdk"
@@ -35,6 +35,7 @@ deploy:
 	kubectl apply -f ./k8s/ServiceAccount.yaml
 	kubectl apply -f ./k8s/Deployment.yaml
 	kubectl apply -f ./k8s/Identity.yaml
+	kubectl apply -f ./k8s/Secret.yaml
 
 push-local:
 	docker build . -t ${PACKAGE}:${VERSION}
@@ -45,6 +46,7 @@ deploy-local:
 	kubectl apply -f ./k8s/ServiceAccount.yaml
 	kubectl apply -k ./k8s
 	kubectl apply -f ./k8s/Identity.yaml
+	kubectl apply -f ./k8s/Secret.yaml
 
 run-in-container:
 	docker run ${PACKAGE}:${VERSION}
