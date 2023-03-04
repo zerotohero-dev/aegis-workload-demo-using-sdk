@@ -6,7 +6,7 @@
 #     .\_/.
 #
 
-VERSION=0.12.70
+VERSION=0.13.0
 PACKAGE=aegis-workload-demo-using-sdk
 REPO=z2hdev/aegis-workload-demo-using-sdk
 REPO_LOCAL="localhost:5000/aegis-workload-demo-using-sdk"
